@@ -71,7 +71,14 @@ public class ExternalInventorySystem {
             reduceInventoryQuantity(inventoryItem, quantitySold);
         }
     }
-    
+
+    /**
+     * Returns an InventoryItem with corresponding itemID. PackagePriv due to testing.
+     * @param itemID        The searched itemID
+     * @return              InventoryItem containing an ItemDTO with the
+     *                      searched itemID, if no such InventoryItem exists
+     *                      returns null.
+     */
     InventoryItem findInventoryItemByID(int itemID) {
         for (InventoryItem item : inventory) {
             if (item.getItem().matchesItemID(itemID)) {
