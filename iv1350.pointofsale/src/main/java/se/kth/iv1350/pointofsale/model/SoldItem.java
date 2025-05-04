@@ -12,6 +12,7 @@ import se.kth.iv1350.pointofsale.integration.ItemDTO;
 public class SoldItem {
     private ItemDTO itemDTO;
     private int quantitySold;
+    private  int STARTING_QUANTITY = 1;
 
     /**
     *Creates a new instance representing one (1) sold item.
@@ -19,7 +20,7 @@ public class SoldItem {
     */
     public SoldItem(ItemDTO itemDTO) {
         this.itemDTO = itemDTO;
-        this.quantitySold = 1;
+        this.quantitySold = STARTING_QUANTITY;
     }
     
     public ItemDTO getItemDTO(){
