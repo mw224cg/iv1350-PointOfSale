@@ -1,0 +1,15 @@
+se\kth\iv1350\pointofsale\model\Payment.class
+se\kth\iv1350\pointofsale\integration\DiscountDatabase.class
+se\kth\iv1350\pointofsale\model\Receipt.class
+se\kth\iv1350\pointofsale\controller\Controller.class
+se\kth\iv1350\pointofsale\integration\InventoryItem.class
+se\kth\iv1350\pointofsale\integration\DiscountDTO.class
+se\kth\iv1350\pointofsale\model\Register.class
+se\kth\iv1350\pointofsale\startup\Main.class
+se\kth\iv1350\pointofsale\integration\ExternalInventorySystem.class
+se\kth\iv1350\pointofsale\model\Sale.class
+se\kth\iv1350\pointofsale\integration\ItemDTO.class
+se\kth\iv1350\pointofsale\model\SoldItem.class
+se\kth\iv1350\pointofsale\model\SaleDTO.class
+se\kth\iv1350\pointofsale\integration\ExternalAccountingSystem.class
+se\kth\iv1350\pointofsale\view\View.class
