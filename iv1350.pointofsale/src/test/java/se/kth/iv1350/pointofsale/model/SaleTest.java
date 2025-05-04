@@ -69,6 +69,18 @@ public class SaleTest {
         
         assertEquals(expResult, result, "Price differs from stored price");
     }
+
+    @Test
+    public void testVATAfterAdjustedQuantity() {
+        saleInstanceToTest.addItem(item);
+        saleInstanceToTest.adjustQuantityOfLastItem(3);
+        SaleDTO saleDTO = saleInstanceToTest.getSaleDTO();
+        
+        double expResult = ((item.getVAT()*0.01)*item.getPrice()) * 3;
+        double result = saleDTO.getVAT();
+        
+        assertEquals(expResult, result, "VAT not updated correctly after adjusted quantity");
+    }
     
     @Test
     public void testAddItemStoresVAT() {
